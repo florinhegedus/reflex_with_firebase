@@ -32,11 +32,10 @@ def register_form():
                 ),
                 rx.button("Register", type="submit"),
             ),
-            on_submit=RegisterState.handle_submit,
+            on_submit=FirebaseState.register,
             reset_on_submit=True,
         ),
         rx.divider(),
         rx.heading("Results"),
         rx.text(RegisterState.form_data.to_string()),
-        rx.text(RegisterState.message)
     )

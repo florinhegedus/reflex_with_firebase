@@ -30,7 +30,7 @@ def login_form() -> rx.Component:
                 ),
                 rx.button("Login", type="submit"),
             ),
-            on_submit=LoginState.handle_submit,
+            on_submit=FirebaseState.login,
             reset_on_submit=True,
         ),
         rx.divider(),
