@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 
 # AUTH
 import pyrebase
@@ -9,7 +8,6 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-load_dotenv()
 
 def initialize_firebase():
     config = {
