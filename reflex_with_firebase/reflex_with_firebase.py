@@ -29,14 +29,11 @@ def index() -> rx.Component:
             AuthState.is_logged_in,
             rx.vstack(
                 rx.heading("You are logged in", size="1"),
+                user_info(),
                 rx.cond(
                     AuthState.is_email_verified,
                     rx.text("Your email is verified."),
                     rx.text("Please verify your email."),
-                ),
-                rx.cond(
-                    AuthState.is_email_verified,
-                    user_info(),
                 ),
                 rx.button("Logout", on_click=AuthState.logout),
             ),
