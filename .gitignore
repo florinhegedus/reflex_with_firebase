@@ -7,7 +7,6 @@ assets/external/
 .venv/*
 
 .vscode/launch.json
-firebase_demo.py
 sample-firebase-ai-app-ae55f-firebase-adminsdk-gy9ut-373ffe9c99.json
 
 .env
